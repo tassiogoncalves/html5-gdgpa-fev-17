@@ -1,0 +1,13 @@
+.img{
+	background: none !important;
+	border: none !important;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+}
+ul.att{
+	font-size: 28px;
+}
+ul.att li ul{
+	font-size: 22px;
+}

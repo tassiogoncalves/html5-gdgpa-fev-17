@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML5 - GDG Paulo Afonso</title>
+
+		<meta name="description" content="Palestra GDG Paulo Afonso">
+		<meta name="author" content="Tássio Gonçalves">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+						<img class="img gdg" src="img/banner-evento.jpg" border="0">
+						
+				</section>
+				<section>
+						<section>
+						<img class="img" src="img/HTML5_Logo_256.png" alt="" border="0">
+						<h2>A SEMÂNTICA DO HTML5</h2>
+						<h3>Mudanças e Novos elementos</h3>
+						<br>
+							<h4>Tássio Gonçalves</h4>
+							<img class="img gdg" src="img/GDGPA_Logo.png" height="80" border="0">
+						
+					</section>
+					<section>
+						<img class="img" src="img/tassio.png" alt="" height="250" border="0">
+							<h3>Tássio Gonçalves</h4>
+							<h5>GitHub: tassiogoncalves</h5>
+							<h5>Facebook/Instagram: tassiogoncalvesg</h5>
+							<h5>tassiogoncalves.com.br</h5>
+							<h5>IFBA - CETEP - UFAL</h5>
+							<img class="img gdg" src="img/GDGPA_Logo.png" height="80" border="0">
+					</section>
+					
+				</section>
+
+				<section>
+					<h2>PARA QUE SERVE A WEB?</h2>
+					<br><br>
+					<ul>
+						<li>Para que usamos a web?</li>
+						<li>O que fazemos na web todos os dias?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>PARA QUE SERVE O HTML?</h2>
+					<br><br>
+					<p>Alguém aqui já se perguntou?</p>
+				</section>
+
+				<section >
+					<section>
+						<h2>LINGUAGEM DE MARCAÇÃO DE HIPERTEXTO</h2>
+						<br><br>
+						<p>Preste atenção nessas duas palavras: <br> <b>Hipertexto</b> e <b>Marcação</b>.</p>
+					</section>
+					<section>
+						<h2>H I P E R T E X T O</h2>
+						<br><br>
+						<p>Informação organizada de forma não linearmente.</p>
+					</section>
+					<section>
+						<h2>M A R C A Ç Ã O</h2>
+						<br><br>
+						<p>Marcar para dar significado.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+							<h2>SEMÂNTICA</h2>
+							<br>
+							<p>Significado da informação.</p>
+<pre><h2>&lt;h1&gt; título &lt;/h1&gt;</h2>
+<p>
+	&lt;p&gt;
+	Lorem ipsum dolor sit
+  	amet, consectetur
+	adipiscing elit. Duis
+	lobortis, orci eu sodales
+	tempor, augue velit
+	pretium nunc, quis
+	scelerisque sem velit vel.
+	&lt;/p&gt;
+	</p></pre>
+					</section>
+					<section>
+						<h2>A ESTRUTURA IMPORTA</h2>
+						<br><br>
+						<p>Sabemos o significado dos elementos, mas o local que esse
+conteúdo se encontra diz muita coisa.</p>
+					</section>
+					<section>
+						<img class="img" src="img/imagem1.png" alt="" border="0">
+					</section>
+					<section>
+						<h2>PARA QUE SERVEM AS DIVS?</h2>
+						<br><br>
+						<p>Essa é fácil. Respondam aí...</p>
+					</section>
+					<section>
+						<h2>QUAL A SEMÂNTICA DAS DIVS?</h2>
+						<br><br>
+						<p>Agora eu quero ver alguém responder...</p>
+					</section>
+					<section>
+						<h1>N E N H U M A</h1>
+					</section>
+					<section>
+						<h1>ISSO MESMO</h1>
+					</section>
+					<section>
+						<h1>N E N H U M A</h1>
+						<br><br>
+						<p>O div não tem função semântica NENHUMA!</p>
+					</section>	
+					<section>
+						<img class="img" src="img/div-ids.png" alt="" border="0">
+					</section>	
+					<section>
+						<img class="img" src="img/div.png" alt="" border="0">
+					</section>	
+				</section>
+
+				<section>
+					<section>
+						<h2>AS NOVAS TAGS</h2>
+						<br><br>
+						<p>A estrutura agora tem um significado semantico, influenciando
+na importância do seu conteúdo.</p>	
+					</section>
+					<section>
+						<h2>AS NOVAS TAGS</h2>
+						<figure>
+							<img class="img" src="img/new-tags-all.png" alt="" border="0">
+							<figcaption>&lt;section&gt;, &lt;aside&gt;, &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;address&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;hgroup&gt;, "&lt;style&gt;" e "&lt;script&gt;".</figcaption>
+						</figure>
+					</section>
+					<section>
+						<img class="img" src="img/new-tag-ids.png" alt="" border="0">
+					</section>
+					<section>
+						<img class="img" src="img/new-tag.png" alt="" border="0">
+					</section>
+					<section>
+						<h2>TAGS PARA MÍDIAS</h2>
+						<p>&lt;figure&gt;, &lt;video&gt; e &lt;audio&gt;</p>
+						<pre><code>
+&lt;figure&gt;
+	&lt;img src="paris.jpg" alt="torre eiffel"&gt;
+	&lt;figcaption&gt; 
+		Visão da torre Eiffel 
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;audio src="musica.mp3" controls&gt;
+
+&lt;video controls src ="intro.mp4" width="480" autoplay&gt; 
+&lt;/video&gt;
+						</code></pre>	
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>TAGS UI</h2>
+						<h4>INTERFACE COM O USUÁRIO</h4>
+						<br><br>
+						<p>São novas tags do HTML5 que oferecem componentes gráficos de interface com o usuário principalmente para melhorar o feedback da aplicação.</p>	
+					</section>
+					<section>
+						<h2>TAG &lt;PROGRESS&gt;</h2>
+						<pre><code>
+&lt;h4&gt; Status da operação &lt;/h4&gt; 
+&lt;progress max="100" value="75"&gt;&lt;/progress&gt;(75% Completo)
+						</code></pre>
+						<h4> Status da operação </h4>
+						<progress max="100" value="75"> </progress> (75% Completo)
+					</section>
+					<section>
+						<h2>TAG &lt;METER&gt;</h2>
+						<pre><code>
+&lt;h4&gt;Desempenho acadêmico &lt;/h3&gt; 
+&lt;meter min="0" max ="100" low="60" high ="90" value="60" optimum="100"&gt;C&lt;/meter&gt; Matemática
+&lt;meter min="0" max ="100" low="60" high ="90" value="90" optimum="100"&gt;C&lt;/meter&gt; Estatística
+&lt;meter min="0" max ="100" low="60" high ="90" value="55" optimum="100"&gt;C&lt;/meter&gt; Física
+&lt;meter min="0" max ="100" low="60" high ="90" value="100" optimum="100"&gt;C&lt;/meter&gt; Algebra
+						</code></pre>
+						<h4>Desempenho acadêmico</h3>
+	<meter min="0" max ="100" low="60" high ="90" value="60" optimum="100"></meter> Matemática <br>
+	<meter min="0" max ="100" low="60" high ="90" value="90" optimum="100"></meter> Estatística <br>
+	<meter min="0" max ="100" low="60" high ="90" value="55" optimum="100"></meter> Física <br>
+	<meter min="0" max ="100" low="60" high ="90" value="100" optimum="100"></meter> Algebra
+					</section>
+					<section>
+						<h2>TAG &lt;DATALIST&gt;</h2>
+						<pre><code>
+	&lt;label for="est"&gt;Digite seu estado&lt;/label&gt; 
+	&lt;input id="est" list="estados" /&gt;
+	&lt;datalist id="estados"&gt;
+		&lt;option value="Bahia"&gt;
+		&lt;option value="Alagoas"&gt;
+		&lt;option value="Pernambuco"&gt; 
+		&lt;option value="Paraíba"&gt;
+	&lt;/datalist&gt;</code></pre>
+						<label for="est"><small>Digite seu estado</small></label><br> 
+						<input id="est" list="estados" /> 
+						<datalist id="estados"> 
+							<option value="Bahia"> 
+							<option value="Alagoas"> 
+							<option value="Pernambuco"> 
+							<option value="Paraíba">
+						</datalist>
+					</section>
+					<section>
+						<h2>TAG &lt;OUTPUT&gt;</h2>
+						<pre><code>
+	Preço: &lt;input type="text" value="50"&gt; &lt;br&gt;
+	Quantidade: &lt;input type="text" value="3"&gt; &lt;br&gt;
+	Total: &lt;output name="total"&gt; R$ 150,00 &lt;/output&gt;
+		</code></pre>
+						<small> 
+						Preço: <input type="text" value="50"> <br>
+						Quantidade: <input type="text" value="3"> <br>
+						Total: <output name="total"> R$ 150,00 </output>
+						</small>
+					</section>
+					<section>
+						<h2>TAG &lt;TIME&gt;</h2>
+						<pre><code >Dates:
+&lt;time datetime="1914"&gt;  &lt;!-- means the year 1914 --&gt;
+&lt;time datetime="1914-12"&gt;  &lt;!-- means December 1914 --&gt;
+&lt;time datetime="1914-12-20"&gt;  &lt;!-- means 20 December 1914 --&gt;
+&lt;time datetime="1914-W15"&gt;  &lt;!-- means week 15 of year 1914 --&gt;
+
+Date and Times:
+&lt;time datetime="1914-12-20T08:00"&gt; &lt;!-- means 20 December 1914 at 8am --&gt;
+&lt;time datetime="1914-12-20 08:30:45"&gt;  &lt;!-- with minutes and seconds --&gt;
+&lt;time datetime="1914-12-20 08:30:45.687"&gt;  &lt;!-- with minutes, seconds, and milliseconds --&gt;
+
+Times:
+&lt;time datetime="08:00"&gt; &lt;!-- means 8am --&gt;
+&lt;time datetime="08:00-03:00"&gt; &lt;!-- means 8am in Rio de Janeiro (UTC-3 hours)  --&gt;
+
+Durations:
+&lt;time datetime="P2D"&gt; &lt;!-- means a duration of 2 days --&gt;
+&lt;time datetime="PT15H10M"&gt; &lt;!-- means a duration of 15 hours and 10 minutes --&gt;
+		</code></pre>
+					</section>
+
+				</section>
+				<section>
+						<section>
+							<h2>TAG &lt;INPUT&gt;</h2>
+							<h4>Novos Tipos</h4>
+							<pre><code contenteditable>
+&lt;input type="color" name="cor"&gt;
+&lt;input type="tel" name="fone"&gt;
+&lt;input name="shoes" type="number" min="5" max="18" step="0.5" value="9"&gt;
+		</code></pre>				
+
+				<label>Search
+		    		<input type="search" name="search">
+		    	</label>
+		    	<label>Date
+		        	<input id="dob" name="dob" type="date" required>
+				</label>
+		        <label>Email 
+		        	<input id="email" name="email" type="email" placeholder="example@domain.com" required>
+				</label> 
+				<br>
+		        <label>URL 
+		        	<input id="url" name="url" type="url" placeholder="http://mysite.com">
+				</label>
+		        <label>Phone 
+		        	<input id="phone" name="phone" type="tel" placeholder="Eg. +447000 000000" required>
+				</label>
+				<label>Number
+					<input id="shoes" name="shoes" type="number" min="5" max="18" step="0.5" value="9">
+				</label>
+				<br>
+				<label>Range
+					<input id="skill" name="skill" type="range" min="1" max="100" value="0">
+				</label>
+		        <label>Month 
+		        	<input id="expiry" name="expiry" type="month">
+				</label>
+				<label>Week 
+		        	<input id="expiry" name="expiry" type="week">
+				</label>
+				<br>
+				<label>Time 
+		        	<input id="expiry" name="expiry" type="time">
+				</label>
+				<label>Color 
+		        	<input id="color" name="color" type="color">
+				</label>
+				<br>
+				<label>Datetime / Datetime-Local
+		        	<input id="expiry" name="local" type="datetime-local">
+				</label>
+
+		<!-- <a href="http://html5doctor.com/html5-forms-input-types/">Fonte HTML5 Doctor</a>
+		 -->
+						</section>
+						<section>
+							<h2>TAG &lt;INPUT&gt;</h2>
+							<h4>Novos Atributos</h4>
+							<ul class="att">
+								<li>
+									<b>Placeholder</b> - Permite adicionar uma dica para o usuário.
+								</li>
+								<li>
+									<b>Required</b> - Esse atributo permite fazer uma validação na input.
+								</li>
+								<li>
+									<b>Autofocus</b> - Permite colocar o foco (cursor) em um determinado elemento.
+								</li>
+								<li>
+									<b>Min e Max</b> - Permitem definir o valor mínimo e valor máximo do input.
+								</li>
+								<li>
+									<b>Autocomplete</b> - Permite desabilitar a função de autocompletar.
+								</li>
+								<li>
+									<b>Pattern</b> - Define uma expressão regular que será usada para fazer a validação.
+									<ul>
+										<li>CPF - pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" - 000.000.000-00</li>
+										<li>Placa - pattern ="[ A-Z]{ 3}[ 0-9]{ 4}" - LLL9999</li>
+										
+									</ul>
+								</li>
+								
+							</ul>
+						</section>
+				</section>
+				<section>
+					<h2>ATRIBUTOS DE TAGS</h2>
+					<br>
+					<ul>
+						<li>
+							<b>accesskey</b> - Define uma tecla de atalho para ativar ou colocar o foco na tag.
+						</li>
+						<li>
+							<b>data-*</b> - Atributo da HTML5 que permite definir um atributo de dados customizável.
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>ESCREVA BOM CÓDIGO</h2>
+					<br>
+					<p>
+						Código bom é código com significado.
+					</p>
+				</section>
+				<section>
+					<h2>ACESSIBILIDADE</h2>
+					<br>
+					<p>
+						Pense sempre em acessibilidade. Essa é a metade do caminho.
+Um sistema/site acessível é visível para máquinas e seres
+humanos.
+					</p>
+				</section>
+				<section>
+					<h2>HTML NASCEU PARA SER PORTÁVEL</h2>
+					<br>
+					<p>
+						Ele precisa ser acessado por qualquer tipo de meio de acesso:
+robôs, dispositivos, pessoas etc.
+					</p>
+				</section>
+				<section>
+					<h2>Muito Obrigado!</h2>
+					<h3>Dúvidas?</h3>
+					<img class="img" src="img/duvidas.gif" alt="" height="300" border="0">
+					<h3>Tássio Gonçalves</h3> 
+					 <h6>tassiogoncalves.com.br</h6>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+				<link rel="stylesheet" href="css/my-css.css">
+
+	</body>
+</html>
